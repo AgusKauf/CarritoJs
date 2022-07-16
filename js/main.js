@@ -9,10 +9,11 @@ const btnVaciar = document.getElementById('vaciarCarrito')
 let carrito
 const carritoEnLS = JSON.parse( localStorage.getItem('carrito') )
 
+const btnAlert = document.getElementById("vaciarCarrito")
 
 
 // generar el DOM de todos los productos
-catalogoProductos.forEach((producto) => {
+/* catalogoProductos.forEach((producto) => {
     const div = document.createElement('div')
     div.classList.add('producto')
 
@@ -25,7 +26,27 @@ catalogoProductos.forEach((producto) => {
 
     productosContainer.append(div)
 })
+ */
 
+fetch("../data.json")
+    .then((res) => res.json())
+    .then((data) => {
+
+        data.forEach((producto) => {
+        const div = document.createElement('div')
+        div.classList.add('producto')
+
+        div.innerHTML = `
+                    <img src=${producto.img} alt="">
+                    <h3>${producto.nombre}</h3>
+                    <p class="precioProducto">Precio: $${producto.precio}</p>
+                    <button onclick="agregarAlCarrito(${producto.id})" id="toast" class="boton-agregar">Agregar <i class="fas fa-shopping-cart"></i></button>
+                `
+
+        productosContainer.append(div)
+                    
+        })
+    })
 
 // function agregarAlCarrito() {
 
@@ -65,7 +86,34 @@ const vaciarCarrito = () => {
     renderTotal()
 }
 
-btnVaciar.addEventListener('click', vaciarCarrito)
+btnAlert.addEventListener("click", () => {
+
+    Swal.fire({
+      
+      title: "Está seguro de vaciar el carrito?",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#F23838",
+      confirmButtonText: "Si, seguro",
+      cancelButtonText: "No, no quiero",
+      
+  
+  }).then((result) => {
+  
+    if (result.isConfirmed) {
+  
+      Swal.fire({
+        title: "Vaciado",
+        icon: "success",
+        text: "El carrito se ha vaciado con éxito",
+        confirmButtonColor: "#F23838",
+      })
+
+      vaciarCarrito()
+    }
+  })  
+  })
+
 
 const renderCarrito = () => {
     carritoContenedor.innerHTML = ''

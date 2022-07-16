@@ -1,4 +1,4 @@
-const btnAlert = document.getElementById("vaciarCarrito")
+/* const btnAlert = document.getElementById("vaciarCarrito")
 
 btnAlert.addEventListener("click", () => {
 
@@ -24,15 +24,18 @@ btnAlert.addEventListener("click", () => {
     })
   }
 })  
-})
+}) */
 
-const btnToast = document.getElementById("toast")
+const btnToast = document.getElementById("boton-carrito")
 
 btnToast.addEventListener("click", () => {
 
   Toastify({
-    text: "El producto se agrego al carrito",
-    duration: 2000
+    text: "Bienvenido al carrito de compras",
+    duration: 1500,
+    style: {
+      background: "#F23838"
+    }
   }).showToast();
 })
 
