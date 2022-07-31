@@ -295,3 +295,13 @@ img{
   height: 70px;
   width: 70px;
 }
+
+#cantidad{
+  width: 150px;
+  border-color: #202124;
+  border-width: medium;
+}
+
+form{
+  padding-bottom: 1rem;
+}

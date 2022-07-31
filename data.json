@@ -3,8 +3,16 @@
     {"id": 2, "nombre": "Tamarindo", "categoria": "Ceramica", "precio": 5000, "stock": 100, "img": "../images/Producto_2.png"},
     {"id": 3, "nombre": "Nordika", "categoria": "Ceramica", "precio": 5000, "stock": 200, "img": "../images/Producto_3.png"},
     {"id": 4, "nombre": "Black Out", "categoria": "Porcelanato", "precio": 8000, "stock": 100, "img": "../images/Producto_4.png"},
-    {"id": 5, "nombre": "Black", "categoria": "Porcelanato", "precio": 5000, "stock": 200, "img": "../images/Producto_5.jpeg"},
-    {"id": 6, "nombre": "Ice", "categoria": "Ceramica", "precio": 5000, "stock": 500, "img": "../images/Producto_6.jpeg"},
-    {"id": 7, "nombre": "Ice", "categoria": "Ceramica", "precio": 5000, "stock": 500, "img": "../images/Producto_6.jpeg"},  
-    {"id": 8, "nombre": "Ice", "categoria": "Ceramica", "precio": 5000, "stock": 500, "img": "../images/Producto_6.jpeg"}      
+    {"id": 5, "nombre": "Rocca Grey", "categoria": "Porcelanato", "precio": 5000, "stock": 200, "img": "../images/RoccaGrey.jpeg"},
+    {"id": 6, "nombre": "Antico Smoke", "categoria": "Porcelanato", "precio": 8500, "stock": 500, "img": "../images/AnticoSmoke.jpeg"},
+    {"id": 7, "nombre": "Liscio Ivory", "categoria": "Porcelanato", "precio": 9000, "stock": 500, "img": "../images/LiscioIvory.jpeg"},  
+    {"id": 8, "nombre": "Kauri", "categoria": "Porcelanato", "precio": 8655, "stock": 300, "img": "../images/Kauri.jpeg"},
+    {"id": 9, "nombre": "Tonale", "categoria": "Porcelanato", "precio": 7000, "stock": 200, "img": "../images/Tonale.jpeg"},
+    {"id": 10, "nombre": "Imperio", "categoria": "Porcelanato", "precio": 9000, "stock": 100, "img": "../images/Imperio.jpeg"},
+    {"id": 11, "nombre": "Calacata", "categoria": "Porcelanato", "precio": 6000, "stock": 200, "img": "../images/Calacata.jpeg"},
+    {"id": 12, "nombre": "Zoita", "categoria": "Porcelanato", "precio": 7200, "stock": 300, "img": "../images/Zoita.jpeg"},
+    {"id": 13, "nombre": "Nordika Ice", "categoria": "Porcelanato", "precio": 8700, "stock": 100, "img": "../images/NordikaIce.jpeg"},
+    {"id": 14, "nombre": "Usato", "categoria": "Porcelanato", "precio": 6700, "stock": 50, "img": "../images/Usato.jpeg"},
+    {"id": 15, "nombre": "Betula", "categoria": "Porcelanato", "precio": 9150, "stock": 20, "img": "../images/Betula.jpeg"},
+    {"id": 16, "nombre": "Baita", "categoria": "Porcelanato", "precio": 5900, "stock": 100, "img": "../images/Baita.jpeg"}      
 ]
